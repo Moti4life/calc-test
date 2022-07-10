@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color: rgb(219, 219, 219);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.title{
+    font-size: 2rem;
+    display: flex;
+
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.calcBody{
+    background-color: #131313;
+    color: #eee;
+
+    padding: 1rem;
+}
+
+.calcDisplay{
+    background-color: #eee;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+.calcDisplay input{
+    background-color: #eee;
+    border: 0;
+    font-size: 2rem;
+}
+
+.calcButtons input{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 0;
+    border: 0;
+}
+
+
+.calcRow{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    padding-top: 2px;
+    background-color: rgb(53, 53, 53);
+}
+
+.calcRow input{
+    flex: 1 0 20%;
+    /* background-color: #131313;
+    color: #eee; */
+}
+.calcRow input:hover{
+    flex: 1 0 20%;
+    /* background-color: #eee;
+    color: #131313; */
+}
+
+.signEqual{
+    background-color: orange;
+}
+.signEqual:hover{
+    background-color: rgb(212, 138, 0);
+}
+
+.offwhite{
+    background-color: rgb(209, 209, 209);
+}
+
+.offwhite:hover{
+    background-color: rgb(182, 182, 182);
 }
